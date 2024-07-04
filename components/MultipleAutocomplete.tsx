@@ -137,14 +137,7 @@ export const MultipleAutocomplete = () => {
       options={top100Films}
       getOptionLabel={(option) => option.title}
       disableCloseOnSelect
-      renderInput={(params) => (
-        <TextField
-          {...params}
-          variant="standard"
-          label="Multiple values"
-          placeholder="Favorites"
-        />
-      )}
+      renderInput={(params) => <TextField {...params} variant="standard" />}
       sx={{
         width: "400px",
       }}
