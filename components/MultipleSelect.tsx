@@ -46,7 +46,6 @@ export const MultipleSelect = ({ values, onChange, options, label }: Props) => {
                 onDelete={(event) => handleDelete(value)}
                 variant="outlined"
                 onMouseDown={(event) => {
-                  // チップの削除ボタンをクリックできるようにする
                   event.stopPropagation();
                 }}
               />
