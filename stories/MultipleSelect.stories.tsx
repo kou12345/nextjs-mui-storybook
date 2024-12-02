@@ -28,7 +28,7 @@ const defaultOptions: string[] = [
   // "Hundred",
 ];
 
-const MultipleSelectWithSHooks = () => {
+const MultipleSelectWithHooks = () => {
   const [selectedValue, setSelectedValue] = useState<string[]>([]);
 
   const handleChange = (value: string[]) => {
@@ -47,5 +47,5 @@ const MultipleSelectWithSHooks = () => {
 
 // 基本的な使用例
 export const Default: Story = {
-  render: () => <MultipleSelectWithSHooks />,
+  render: () => <MultipleSelectWithHooks />,
 };
